@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #faf8f5;
+  --sand: #f5ede3;
+  --warm: #e8d9c8;
+  --mocha: #8b6f4e;
+  --mocha-light: #c4a882;
+  --bark: #2c2316;
+  --bark-mid: #4a3728;
+  --stone: #7a6a57;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--bark);
+  font-family: Georgia, "Times New Roman", serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer utilities {
+  .text-mocha { color: var(--mocha); }
+  .bg-cream { background: var(--cream); }
+  .bg-sand { background: var(--sand); }
+}
